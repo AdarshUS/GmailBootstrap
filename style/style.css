@@ -1,0 +1,46 @@
+.sidenavv{
+  background-color:#eaf1fb;
+  height:100vh;
+  width:70px;
+}
+
+.maincont{
+  outline:1px solid;
+  height:100vh;
+}
+
+
+
+.searchbtnContainer{
+  background-color:#eaf1fb;
+}
+
+.emailContainer,.messageContainer,.gmeetContainer{
+  width: 35px;
+  height: 26px;  
+  border-radius: 15px;
+}
+
+.emailContainer{
+  background-color:#ceddf4;
+}
+
+.menuContainer{
+  width: 32px;
+  height: 32px;  
+  border-radius: 50%;
+}
+
+.searchbar{
+  background-color:#eaf1fb;
+}
+
+.searchbar input{
+  background-color:#eaf1fb;
+}
+
+.searchbar input[type=text]:focus{
+background-color:#eaf1fb;
+
+}
+
