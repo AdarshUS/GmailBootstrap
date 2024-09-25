@@ -9,9 +9,6 @@
   height:100vh;
 }
 
-
-
-
 .emailContainer,.messageContainer,.gmeetContainer{
   width: 35px;
   height: 26px;  
@@ -50,5 +47,53 @@ box-shadow: none;
   height: 48px;
   background-color: #E4ECF8;
   border-radius: 10px;
+}
+
+.header__account {
+  width: 134px;
+  height: 48px;
+  border: 1px solid #dfdfe2;
+  border-radius: 7px;
+  margin-top: 6px;
+}
+
+.header__account .header__account-name {
+  background: #ad41c1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;  
+}
+
+.header{
+outline :1px solid black;
+}
+
+.headerItem1{
+ outline :1px solid green;
+}
+
+.headerItem2{
+  outline :1px solid green;
+}
+
+.headerItem3{
+  outline :1px solid green;
+}
+
+.main__sidebar-compose{
+   background-color: #C2E7FF;
+    border-radius: 17px;
+    width: 137px;
+   height: 56px;
+}
+
+.main__sidebar-item_inbox,.main__sidebar-item5-draft{
+  width:191px;
+}
+
+.labels_text{
+  padding-right:148px;
 }
 
