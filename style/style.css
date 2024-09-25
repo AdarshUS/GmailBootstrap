@@ -11,9 +11,6 @@
 
 
 
-.searchbtnContainer{
-  background-color:#eaf1fb;
-}
 
 .emailContainer,.messageContainer,.gmeetContainer{
   width: 35px;
@@ -31,16 +28,27 @@
   border-radius: 50%;
 }
 
-.searchbar{
+.searchBar{
   background-color:#eaf1fb;
 }
 
-.searchbar input{
+.searchBar input{
   background-color:#eaf1fb;
+  outline: none;
+  border: none;
 }
 
-.searchbar input[type=text]:focus{
+.searchBar input[type=text]:focus{
 background-color:#eaf1fb;
+outline: none;
+box-shadow: none;
 
+}
+
+.activeContainer{
+  width: 101px;
+  height: 48px;
+  background-color: #E4ECF8;
+  border-radius: 10px;
 }
 
