@@ -1,6 +1,14 @@
+p{
+  margin:0;
+}
+div{
+ padding:0;
+}
+
 body{
  font-family: arial;
  background-color: #f7f8fc;
+ overflow:hidden;
 }
 
 .sidenavv{
@@ -10,7 +18,7 @@ body{
 }
 
 .maincont{
-  outline:1px solid;
+  
   height:100vh;
 }
 
@@ -67,22 +75,6 @@ body{
   border-radius: 50%;
   text-align: center;
   color: white;  
-}
-
-.header{
-  outline :1px solid black;
-}
-
-.headerItem1{
-  outline :1px solid green;
-}
-
-.headerItem2{
-  outline :1px solid green;
-}
-
-.headerItem3{
-  outline :1px solid green;
 }
 
 .main__sidebar-compose{
@@ -258,3 +250,6 @@ header{
   background-color:#f2f5fc
 }
 
+.messageBox{  
+  height: 668px;
+}
