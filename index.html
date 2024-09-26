@@ -1,0 +1,787 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+   <body>
+     <div class="main-container d-lg-flex d-none">      
+       <div class="sidenavv d-flex flex-column align-items-center">         
+         <div class="d-flex align-items-center justify-content-center menuContainer mt-3">
+           <img src="Assets/images/main-menu.png" alt="" width=19>          
+         </div>
+         <div class="mt-4">
+           <div class="pb-3">
+             <div class="d-flex align-items-center justify-content-center emailContainer">
+               <img src="Assets/images/email.png" alt="" width=16>
+             </div>           
+             <div>Mail</div>
+           </div>
+           <div class="pb-3">
+             <div class="d-flex align-items-center justify-content-center messageContainer">
+               <img src="Assets/images/message.png" alt="" width=15>
+             </div>
+             <div>Chat</div>
+           </div>
+           <div class="pb-3">
+             <div class="d-flex align-items-center justify-content-center gmeetContainer">
+               <img src="Assets/images/gmeet.png" alt="" width=15>
+             </div>           
+             <div>Meet</div>
+           </div> 
+        </div>                  
+       </div>
+       <div class="maincontent container-fluid">
+         <div class="row header">
+           <div class="col-12 col-md-2 headerItem1 d-flex align-items-center">
+             <div class="p-3 d-flex align-items-center h-20">
+               <img src="Assets/images/gmail.png" width=27 alt="logo">
+               <span class="fs-5 px-2">Gmail</span>
+             </div>
+           </div>
+           <div class="col-12 col-md-5 headerItem2">
+             <div class="searchBar d-flex align-items-center rounded-pill px-3 py-2 mt-2">
+               <img src="./Assets/images/search.png" alt="SearchIcon" width="16">
+               <input type="text" placeholder="Search mail" class="form-control border-0 search-input">
+               <img src="./Assets/images/searchoption.png" alt="OptionsIcon" width="23">
+             </div>
+           </div>
+           <div class="col-12 col-md-5 headerItem3 d-flex justify-content-end align-items-center">
+             <div class="row">
+                <div class="activeContainer d-flex align-items-center justify-content-center rounded-pill mt-2 p-2 col-12 col-md-8 col-lg-6 w-100">
+                  <img src="./Assets/images/green-circle.png" alt="" width="14">
+                  <div class="px-2 d-none d-xl-flex">Active</div>
+                  <img src="./Assets/images/down-arrow.png" alt="" width="14">
+                </div>
+             </div>            
+             <div class="d-flex ms-4">
+               <img src="./Assets/images/question.png" alt="" width="14" class="mx-2">
+               <img src="./Assets/images/setting.png" alt="" width="14" class="mx-2">
+               <img src="./Assets/images/show-apps-button.png" alt="" width="14" class="mx-2">
+             </div>
+             <div class="header__account d-flex align-items-center ms-4">
+               <img src="Assets/images/techversant_logo.png" width=85 alt="logo">
+               <div class="header__account-name d-flex justify-content-center align-items-center">
+                 <span>A</span>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-2">
+             <div class="main__sidebar-compose d-flex justify-content-center align-items-center col-12 m-2">
+               <img src="Assets/images/compose.png" alt="compose">
+               <span>Compose</span>
+             </div>
+             <div class="main__sidebar-item1 inbox col-12 d-flex pb-2 mt-4 rounded-pill align-items-center">
+               <img src="Assets/images/inbox.png" alt="inbox">
+               <div class="main__sidebar-item_inbox d-flex justify-content-between">
+                 <div class="main__sidebar-item_inbox-text px-2">Inbox</div>             
+                 <div>23</div>
+               </div>           
+             </div>
+             <div class="main__sidebar-item2 stared col-12 d-flex pb-2">
+               <img src="Assets/images/star.png" alt="starred">
+               <div class="px-2">Starred</div>
+             </div>
+             <div class="main__sidebar-item3 snooz col-12 d-flex pb-2">
+               <img src="Assets/images/clock.png" alt="snoozed">
+               <div class="px-2">Snoozed</div>
+             </div>
+             <div class="main__sidebar-item4 sent col-12 d-flex pb-2">
+               <img src="Assets/images/send.png" alt="sent">
+               <div class="px-2">Sent</div>
+             </div>
+             <div class="main__sidebar-item5 draft col-12 d-flex pb-2">
+               <img src="Assets/images/draft.png" alt="drafts" width=20>
+               <div class="main__sidebar-item5-draft d-flex justify-content-between">
+                 <div class="main__sidebar-item5-draft-text px-2">Drafts</div>
+                 <div class="main__sidebar-item5-draft-no">4</div>
+               </div>           
+             </div>
+             <div class="main__sidebar-item6 more col-12 pb-2 d-flex">
+               <img src="Assets/images/down-arrow.png" alt="more" width=20>
+               <div class="px-2">More</div>
+             </div>
+             <div class="d-flex">
+               <div class="labels_text">Labels</div>
+               <div class="plusContainer d-flex justify-content-end">
+                 <img src="Assets/images/plus.png" alt="">
+               </div>               
+             </div>               
+           </div>
+           <div class="col-10">
+             <div class="row">
+               <div class="col-12">
+                 <div class="MessageHeader d-flex justify-content-between bg-white p-2 rounded-top mt-1">
+                   <div class="MessageHeader_left d-flex justify-content-between gap-4">
+                     <div class="MessageHeader_leftItem1">
+                       <img src="./Assets/images/square.png" alt="" width="14">
+                       <img src="./Assets/images/Down.png" alt="" width="9">
+                     </div>
+                     <div class="MessageHeader_leftItem2">
+                      <img src="./Assets/images/refresh.png" alt="" width="14">
+                     </div>
+                     <div class="MessageHeader_leftItem3">
+                      <img src="./Assets/images/more.png" alt="" width="14">
+                     </div>
+                   </div>
+                   <div class="MessageHeader_right d-flex gap-4">
+                     <div class="MessageHeader_rightItem1">
+                      1-39 of 39
+                     </div>
+                     <div class="MessageHeader_rightItem2">
+                       <img src="./Assets/images/left-arrow.png" alt="" width="14">
+                     </div>
+                     <div class="MessageHeader_rightItem3">
+                      <img src="./Assets/images/right-arrow.png" alt="" width="14">
+                     </div>
+                   </div>
+                </div>
+               </div>
+             </div>
+             <div class="messageBox row overflow-scroll h-60">
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star17"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star16"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star15"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star14"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star13"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star12"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star11"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star10"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star9"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star8"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star7"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star6"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+<div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star5"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star4"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star3"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star2"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+               <div class="col-12 d-xl-flex d-md-grid justify-content-between p-2 messagerow">
+                 <div class="main_messagebox-rowItem1 d-flex align-items-center gap-3 pe-3"> 
+                   <div class="mt-1"><input type="checkbox"></div>
+                   <div><img src="Assets/images/star.png" alt="star1"></div>
+                   <div>Techversant</div>
+                 </div>
+                 <div class="main_messagebox-rowItem2">
+                   <div class="main_messageboxText">Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+                 </div>            
+                 <div class="main_messagebox-rowItem3">
+                   <div class="main_messagebox-time">
+                     9:28 AM
+                   </div> 
+                   <div class="main_messagebox_hoverItem d-none">
+                     <img src="./Assets/images/archive-box.png" alt="" width="14">
+                     <img src="./Assets/images/trash.png" alt="" width="14">
+                     <img src="./Assets/images/message_2.png" alt="" width="14">
+                     <img src="./Assets/images/clock_2.png" alt="" width="14">
+                   </div>
+                 </div>         
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="mobile-container d-md-block d-lg-none ">
+       <div class="Gmailapp_Notify d-flex justify-content-between align-items-center ">
+         <div class="Gmailapp_NotifyItem1 d-flex">
+           <div class="Gmailapp_Notify-logo d-flex justify-content-center align-items-center">             
+             <img src="./Assets/images/gmail.png" alt="" width="28">
+             <div class="red-dot"></div>
+           </div>
+           <div>
+             <div class="Gmailapp_Notify-text1">Upgrade to a smarter Gmail</div>
+             <div class="Gmailapp_Notify-text2">Secure,fast & organized email</div>
+           </div>              
+         </div>        
+         <div class="Gmailapp_NotifyItem2">
+            OPEN
+         </div>
+        </div>    
+    <header class="d-flex justify-content-between align-items-center">
+        <div class="header_mainmenu">
+          <img src="./Assets/images/main-menu.png" alt="" width="23">
+        </div>
+        <div>
+           <span class="inbox-text">Inbox</span><span class="Nine-text">9</span>
+        </div>
+        <div class="pen-container">
+          <i class="fa-solid fa-pen pen"></i>
+        </div>
+    </header>
+    <div class="searchbarContainer d-flex align-items-center bg-white">
+      <div class="searchbarContainer-searchbar d-flex">
+        <img src="./Assets/images/search.png" alt="" width="17" class="d-inline-block">
+        <input type="text" placeholder="search">
+      </div>
+    </div>
+    <div class="message_box bg-white">
+      <div class="message_box-row d-flex align-items-center">
+        <div>
+          <input type="checkbox" name="message1" id="message1">
+        </div>          
+          <div class="message_box-text">
+            <div class="message_box-textItem1">
+                <div class="message_box-textHead">
+                  Techversant Infotech Pvt.
+                </div>
+                 <div class="message_box-textItem1Time">
+                    9:24 am
+                </div>
+            </div>
+            <div class="message_box-textItem2">
+                <div>
+                  <p class="m-0">Daily Email Digest</p>                  
+                </div>
+            </div>
+            <div class="message_box-textItem3">
+              <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+              <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+            </div>                
+          </div>
+      </div>       
+        <div class="message_box-row d-flex align-items-center">
+            <div>
+                <input type="checkbox" name="message2" id="message2">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          Yesterday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center">
+            <div>
+                <input type="checkbox" name="message3" id="message3">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          Saturday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center">
+            <div>
+                <input type="checkbox" name="message4" id="message4">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                         Friday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center">
+            <div>
+                <input type="checkbox" name="message5" id="message5">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          Friday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center">
+            <div>
+                <input type="checkbox" name="message6" id="message6">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          Thursday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center">
+            <div>
+                <input type="checkbox" name="message7" id="message7">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          9:24 am
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center p-0">
+            <div>
+                <input type="checkbox" name="message8" id="message8">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          Thursday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center p-0">
+            <div>
+                <input type="checkbox" name="message9" id="message9">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                         Thursday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries </p>
+                    <img src="./Assets/images/star2.png" alt="star" width=16 height=16>
+                  </div>                
+                </div>
+        </div>
+        <div class="message_box-row d-flex align-items-center p-0">
+            <div>
+                <input type="checkbox" name="message10" id="message10">
+              </div>          
+                <div class="message_box-text">
+                  <div class="message_box-textItem1">
+                      <div class="message_box-textHead">
+                        Techversant Infotech Pvt.
+                      </div>
+                       <div class="message_box-textItem1Time">
+                          Wednesday
+                      </div>
+                  </div>
+                  <div class="message_box-textItem2">
+                      <div>
+                        <p class="m-0">Daily Email Digest</p>                  
+                      </div>
+                  </div>
+                  <div class="message_box-textItem3">
+                    <p>Daily Digest Sunday, 22 sep Hello,Adarsh US Work anniversaries today JV julie Vargese 3 years On leave today...</p>
+                    <img src="./Assets/images/star2.png" alt="star" width=15>
+                  </div>                
+                </div>
+        </div>
+    </div>
+    </div>            
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </body>
+</html>
